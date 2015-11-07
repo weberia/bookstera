@@ -1,0 +1,32 @@
+{
+  "name": "weberiajs",
+  "version": "1.0.0",
+  "description": "A framework for pragmatic web application",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/weberia/weberiajs.git"
+  },
+  "keywords": [
+    "syntactic",
+    "semantic",
+    "pragmatic",
+    "web",
+    "agent",
+    "interaction",
+    "communication"
+  ],
+  "author": "Bambang Purnomosidi D. P.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/weberia/weberiajs/issues"
+  },
+  "homepage": "https://github.com/weberia/weberiajs#readme",
+  "dependencies": {
+    "hapi": "^11.1.0",
+    "jsonld": "^0.4.2"
+  }
+}
