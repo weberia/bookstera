@@ -1,14 +1,7 @@
-weberiajs
-=========
+texture
+=======
 
-Welcome to weberiajs. What's that?, you ask. Well,
-
-> I'm an idealist. I don't know where I'm going, but I'm on my way.<br/>
-> -- Carl Sandburg
-
-## Documentation
-
-See [documentation](http://github.com/weberia/documentation)
+A showcase of pragmatic web systems.
 
 ## License
 
