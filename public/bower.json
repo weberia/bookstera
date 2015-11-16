@@ -1,14 +1,13 @@
 {
-  "name": "public",
+  "name": "weberia-components",
   "authors": [
     "Bambang Purnomosidi D. P. <bambangpdp@yahoo.com>"
   ],
-  "description": "Public components for Texture",
+  "description": "web components and polymer for weberia",
   "main": "",
   "moduleType": [],
   "license": "MIT",
   "homepage": "",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -17,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "~1.2.1"
+    "polymer": "Polymer/polymer#^1.2.2"
   }
 }
