@@ -1,7 +1,32 @@
+var Path = require('path');
 var Hapi = require('hapi');
 
 var server = new Hapi.Server();
-server.connection({ port: 3000 });
+
+server.register(require('inert'), function (err) {
+  if (err) {
+    throw err;
+  }
+});
+
+server.connection({
+  port: 3000,
+  routes: {
+    files: {
+      relativeTo: Path.join(__dirname, 'public')
+    }
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/components/{param*}',
+  handler: {
+    directory: {
+      path: 'bower_components'
+    }
+  }
+});
 
 server.route({
     method: 'GET',
