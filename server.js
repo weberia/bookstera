@@ -9,6 +9,7 @@ server.register(require('inert'), function (err) {
   }
 });
 
+
 server.connection({
   port: 3000,
   routes: {
@@ -43,6 +44,14 @@ server.route({
         reply('Hello, ' + encodeURIComponent(request.params.name) + '!');
     }
 });
+
+server.register({ register: require('weberia') }, {
+    routes: {
+        prefix: '/discourses'
+    }
+}, function (err) {
+});
+
 
 server.start(function () {
     console.log('Server running at:', server.info.uri);
