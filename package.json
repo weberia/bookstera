@@ -1,14 +1,14 @@
 {
-  "name": "Texture",
+  "name": "Universio",
   "version": "1.0.0",
-  "description": "A pragmatic web application demo: academic information systems",
+  "description": "A showcase of pragmatic web systems",
   "main": "server.js",
   "scripts": {
     "test": "mocha spec"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/weberia/weberiajs.git"
+    "url": "git+ssh://git@github.com/weberia/universio.git"
   },
   "keywords": [
     "syntactic",
@@ -22,14 +22,14 @@
   "author": "Bambang Purnomosidi D. P.",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/weberia/weberiajs/issues"
+    "url": "https://github.com/weberia/universio/issues"
   },
-  "homepage": "https://github.com/weberia/weberiajs#readme",
+  "homepage": "https://github.com/weberia/universio#readme",
   "dependencies": {
     "arangojs": "^4.0.1",
-    "hapi": "^11.1.1",
+    "hapi": "^11.1.2",
     "inert": "^3.2.0",
     "jsonld": "^0.4.2",
-    "weberia": "^0.9.0"
+    "weberia": "^0.9.1"
   }
 }
