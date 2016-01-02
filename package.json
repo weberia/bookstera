@@ -26,10 +26,9 @@
   },
   "homepage": "https://github.com/weberia/universio#readme",
   "dependencies": {
-    "arangojs": "^4.0.1",
-    "hapi": "^11.1.2",
+    "arangojs": "^4.2.1",
+    "hapi": "^11.1.4",
     "inert": "^3.2.0",
-    "jsonld": "^0.4.2",
-    "weberia": "^0.9.1"
+    "jsonld": "^0.4.2"
   }
 }

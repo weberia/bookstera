@@ -1,6 +1,8 @@
 Universio
 =========
 
+![Universio](images/logo-universio.png)
+
 A showcase of pragmatic web systems.
 
 ## License
