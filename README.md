@@ -1,7 +1,7 @@
 Universio
 =========
 
-![Universio](images/logo-universio.png)
+![Universio](public/images/logo-universio.png)
 
 A showcase of pragmatic web systems.
 
