@@ -1,5 +1,5 @@
 {
-  "name": "Universio",
+  "name": "Bookstera",
   "version": "1.0.0",
   "description": "A showcase of pragmatic web systems",
   "main": "server.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/weberia/universio.git"
+    "url": "git+ssh://git@github.com/weberia/bookstera.git"
   },
   "keywords": [
     "syntactic",
@@ -22,11 +22,11 @@
   "author": "Bambang Purnomosidi D. P.",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/weberia/universio/issues"
+    "url": "https://github.com/weberia/bookstera/issues"
   },
-  "homepage": "https://github.com/weberia/universio#readme",
+  "homepage": "https://github.com/weberia/bookstera#readme",
   "dependencies": {
-    "hapi": "^12.x.x",
+    "hapi": "^13.x.x",
     "inert": "^3.2.0"
   }
 }

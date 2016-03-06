@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Attention: for development only, not a part of Universio
+# Attention: for development only, not a part of Bookstera 
 # This bash script is only used to create symlinks from
 # developed hapi plugin inside Weberia so that I don't need
 # to go get them at npmjs.com
