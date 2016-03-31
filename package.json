@@ -26,7 +26,12 @@
   },
   "homepage": "https://github.com/weberia/bookstera#readme",
   "dependencies": {
-    "hapi": "^13.x.x",
-    "inert": "^3.2.0"
+    "hapi": "*",
+    "inert": "*",
+    "collabox": "file:../weberia/collabox/plugin",
+    "rlogix": "file:../weberia/rlogix/plugin",
+    "semantix": "file:../weberia/semantix/plugin",
+    "speax": "file:../weberia/speax/plugin",
+    "storix": "file:../weberia/storix/plugin"
   }
 }
