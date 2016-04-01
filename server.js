@@ -45,9 +45,16 @@ server.route({
     }
 });
 
-server.register({ register: require('weberia') }, {
+server.register({ register: require('speax') }, {
     routes: {
         prefix: '/discourses'
+    }
+}, function (err) {
+});
+
+server.register({ register: require('collabox') }, {
+    routes: {
+        prefix: '/collabox'
     }
 }, function (err) {
 });

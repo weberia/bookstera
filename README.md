@@ -1,7 +1,7 @@
-Universio
+Bookstera
 =========
 
-![Universio](public/images/logo-universio.png)
+![Bookstera](public/images/logo-bookstera.png)
 
 A showcase of pragmatic web systems.
 
