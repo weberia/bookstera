@@ -9,7 +9,7 @@ A showcase of pragmatic web systems.
 
 This showcase uses data store plugin (Storix). The configuration for Bookstera data store is reside in `/etc/rethinkdb/instances.d/bookstera.conf` since we will use systemd for bookstera bootstrap. The `bookstera.conf` file consists of some RethinkDB configuration:
 
-``
+```
 ## Directory to store data and metadata
 ## Command line default: ./rethinkdb_data
 ## Init script default: /var/lib/rethinkdb/<name>/ (where <name> is the name of this file without the extension)
@@ -30,18 +30,18 @@ bind=all
 ## The name for this server (as will appear in the metadata).
 ## If not specified, it will be randomly chosen from a short list of names.
 server-name=bookstera
-``
+```
 
 For the first time, the directory should be populated first with metadata (this should be done for first time data store creation, no need to do that again next):
 
-``
+```
 # rethinkdb create /var/lib/rethinkdb/bookstera
 # chown -R rethinkdb:rethinkdb /var/lib/rethinkdb/bookstera
-``
+```
 
 If you already have the directory, run with:
 
-``
+```
 # systemctl start rethinkdb@bookstera.service
 # systemctl status rethinkdb@bookstera.service
 ● rethinkdb@bookstera.service - RethinkDB database server for instance 'bookstera'
@@ -64,7 +64,7 @@ Apr 03 10:04:35 archera rethinkdb[3435]: Listening for client driver connections
 Apr 03 10:04:35 archera rethinkdb[3435]: Listening for administrative HTTP connections on port 8080
 Apr 03 10:04:35 archera rethinkdb[3435]: Listening on addresses: 127.0.0.1, 192.168.1.7, ::1, fe80::e9ca:7754:44a5:1d92%3
 Apr 03 10:04:35 archera rethinkdb[3435]: Server ready, "archera_9lk" c40097cf-f9f7-448a-aa84-bd0f9b629dee
-``
+```
 
 ## License
 
