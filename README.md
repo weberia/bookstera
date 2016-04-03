@@ -9,39 +9,44 @@ A showcase of pragmatic web systems.
 
 This showcase uses data store plugin (Storix). The configuration for Bookstera data store is reside in `/etc/rethinkdb/instances.d/bookstera.conf` since we will use systemd for bookstera bootstrap. The `bookstera.conf` file consists of some RethinkDB configuration:
 
-  ## Directory to store data and metadata
-  ## Command line default: ./rethinkdb_data
-  ## Init script default: /var/lib/rethinkdb/<name>/ (where <name> is the name of this file without the extension)
-  directory=/var/lib/rethinkdb/bookstera
+```
+## Directory to store data and metadata
+## Command line default: ./rethinkdb_data
+## Init script default: /var/lib/rethinkdb/<name>/ (where <name> is the name of this file without the extension)
+directory=/var/lib/rethinkdb/bookstera
 
-  ## Log file options
-  ## Default: <directory>/log_file
-  log-file=/var/log/rethinkdb-bookstera
+## Log file options
+## Default: <directory>/log_file
+log-file=/var/log/rethinkdb-bookstera
 
-  ### Network options
+### Network options
 
-  ## Address of local interfaces to listen on when accepting connections
-  ## May be 'all' or an IP address, loopback addresses are enabled by default
-  ## Default: all local addresses
-  ##bind=127.0.0.1
-  bind=all
+## Address of local interfaces to listen on when accepting connections
+## May be 'all' or an IP address, loopback addresses are enabled by default
+## Default: all local addresses
+##bind=127.0.0.1
+bind=all
 
-  ## The name for this server (as will appear in the metadata).
-  ## If not specified, it will be randomly chosen from a short list of names.
-  server-name=bookstera
+## The name for this server (as will appear in the metadata).
+## If not specified, it will be randomly chosen from a short list of names.
+server-name=bookstera
+```
 
 For the first time, the directory should be populated first with metadata (this should be done for first time data store creation, no need to do that again next):
 
-  # rethinkdb create /var/lib/rethinkdb/bookstera
-  # chown -R rethinkdb:rethinkdb /var/lib/rethinkdb/bookstera
+```
+# rethinkdb create /var/lib/rethinkdb/bookstera
+# chown -R rethinkdb:rethinkdb /var/lib/rethinkdb/bookstera
+```
 
 If you already have the directory, run with:
 
-  # systemctl start rethinkdb@bookstera.service
-  # systemctl status rethinkdb@bookstera.service
-  ● rethinkdb@bookstera.service - RethinkDB database server for instance 'bookstera'
-    Loaded: loaded (/usr/lib/systemd/system/rethinkdb@.service; disabled; vendor preset: disabled)
-    Active: active (running) since Sun 2016-04-03 10:04:34 WIB; 4min 54s ago
+```
+# systemctl start rethinkdb@bookstera.service
+# systemctl status rethinkdb@bookstera.service
+● rethinkdb@bookstera.service - RethinkDB database server for instance 'bookstera'
+  Loaded: loaded (/usr/lib/systemd/system/rethinkdb@.service; disabled; vendor preset: disabled)
+  Active: active (running) since Sun 2016-04-03 10:04:34 WIB; 4min 54s ago
   Main PID: 3435 (rethinkdb)
     Tasks: 78 (limit: 512)
     CGroup: /system.slice/system-rethinkdb.slice/rethinkdb@bookstera.service
@@ -61,6 +66,7 @@ If you already have the directory, run with:
   Apr 03 10:04:35 archera rethinkdb[3435]: Listening on addresses: 127.0.0.1, 192.168.1.7, ::1,
     fe80::e9ca:7754:44a5:1d92%3
   Apr 03 10:04:35 archera rethinkdb[3435]: Server ready, "archera_9lk" c40097cf-f9f7-448a-aa84-bd0f9b629dee
+```
 
 ## License
 
